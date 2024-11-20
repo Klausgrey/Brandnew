@@ -2,7 +2,9 @@
 
 ## Overview
 
-This is my very first project at Netisens, where I utilized **HTML** and **CSS** to achieve the desired results. The project demonstrates my foundational web development skills and focuses on creating a visually appealing and functional webpage.
+This is my very first project at Netisens, where I utilized **HTML** and **CSS** to achieve the desired results. Below is the design I replicated for this project:
+
+![Replicated Design](img/75d3968c-586c-4ac7-8f6d-68ab450d2277-cover.png)
 
 ## Features
 
