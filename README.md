@@ -8,7 +8,7 @@ This is my very first project at Netisens, where I utilized **HTML** and **CSS**
 
 - **HTML**: Structured the content of the webpage, ensuring semantic accuracy and proper element hierarchy.
 - **CSS**: Styled the webpage to meet design expectations, including:
-  - Customizing layouts with `flexbox` and `grid`.
+  - Customizing layouts with `flex` and `grid`.
   - Adding interactive elements with hover and focus effects.
   - Designing a responsive interface for various screen sizes.
 
