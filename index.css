@@ -1,56 +1,46 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Base Styles */
 body  {
     background-color: rgb(23, 29, 93);
     font-family: sans-serif;
-    list-style: none;
 }
 
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline-start: 70px;
+    padding-inline-start: 140px;
     padding-inline-end: 50px;
-
-            /* Adjust font sizes for smaller screens */
-    @media (max-width: 768px) {
-    font-size: 1rem;
-    }
-    /* Adjust font sizes for even smaller screens */
-    @media (max-width: 480px) {
-    font-size: 0.5rem;
-}
+    margin: 5px;
 }
 
 nav .left {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px;
 }
 
 nav .left h1 {
     color: #fff;
-    padding-inline-start: 40px;
     font-size: 2rem;
-    margin-right: 50px;
+    margin-right: 200px;
 }
 
 nav .left ul {
-list-style: none;
-padding: 20px;
-display: flex;
-align-items: center;
+    list-style: none;
+    display: flex;
 }
 
 nav .left ul li{
     padding-inline: 5px;
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 nav .left ul li:hover {
@@ -60,10 +50,7 @@ nav .left ul li:hover {
 
 nav .right {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 30%;
+    justify-content: center; 
     padding: 20px;
     margin-right: 100px;
 }
@@ -83,7 +70,6 @@ nav .right .login {
 }
 
 
-
 nav .right .join {
     background-color: rgb(51, 196, 244);
     color: #fff;
@@ -91,34 +77,19 @@ nav .right .join {
 }
 
 nav .right .join:hover {
-    /* transition: box-shadow 0.5s ease-in-out; */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    font-size: 0.9rem;
+    transform: scale(1.06);
     cursor: pointer;
 } 
 
-
+/* Header Section */
 .header {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     margin: 70px;
     margin-bottom: 40px;
     color: #fff;
     line-height: 1.3;
-
-       /* Adjust font size for smaller screens */
-    @media (max-width: 768px) {
-        font-size: 2rem;
-    }
-
-    /* Adjust font size for even smaller screens */
-    @media (max-width: 480px) {
-        font-size: 1.3rem;
-    }
 }
 
 .header h4 {
@@ -129,34 +100,15 @@ nav .right .join:hover {
 .header h1 {
     font-weight: bold;
     font-size: 2.5rem;
-
-
-        @media (max-width: 768px) {
-        font-size: 2.5rem;
-    }
-
-    /* Adjust font size for even smaller screens */
-    @media (max-width: 480px) {
-        font-size: 1.3rem;
-    }
 }
 
 .header h3 {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     margin-top: 30px;
-    margin-bottom: px;
     font-weight: lighter;
-
-        /* Adjust font sizes for smaller screens */
-    @media (max-width: 768px) {
-    font-size: 1rem;
-    }
-    /* Adjust font sizes for even smaller screens */
-    @media (max-width: 480px) {
-    font-size: 0.5rem;
-  }
 }
 
+/* Buttons Section */
 .buttons {
     display: flex;
     justify-content: center;
@@ -165,6 +117,7 @@ nav .right .join:hover {
 
 .buttons button {
     width: 10%;
+    height: 10%;
     padding: 13px;
     background-color: rgb(51, 196, 244);
     color: #fff;
@@ -172,55 +125,49 @@ nav .right .join:hover {
     font-weight: bold;
     border-radius: 7px;
     font-size: 0.6rem;
- }
+}
 
- .buttons button:hover {
+.buttons button:hover {
     cursor: pointer;
- }
+    transform: scale(1.06);
+}
 
-  .buttons #second-button {
+.buttons #second-button {
     background-color: transparent;
     border: 1px solid rgb(51, 196, 244);
     margin-left: 10px;
-  }
+}
 
+/* Grid Section */
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Three columns on large screens */
     gap: 20px;
     padding: 50px 50px 50px 50px;
     margin: 30px 90px 50px 90px;
+}
 
-    /* Adjust font size for even smaller screens */
-    @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    }
-  }
-
+  /* Stying the grid contents all together */
   .grid-item {
     background-color: #fff;
-    padding: 30px;
-    /* padding-inline: 20px; */
+    padding: 35px;
     transition: box-shadow 0.5s ease-in-out;
-    border-radius: 10px;
-    /* position: relative; */
-  }
+    transition: 0.9s ease-in-out;
+    border-radius: 10px; 
+}
 
 .grid-item h1 {
     color: rgb(225, 37, 4);
     background: rgb(235, 131, 113);
-    /* width: 10%; */
-    /* height: 10%; */
     text-align: left;
     padding: 10px;
     width: 12%;
     height: auto;
     border-radius: 10px;
     overflow: hidden;
-
 }
 
-.grid-item h3{
+.grid-item h3 {
     font-size: 1rem;
     border-bottom: solid 2px #dc0d0d;
     padding-bottom: 20px;
@@ -228,55 +175,83 @@ nav .right .join:hover {
     font-weight: bold;
     padding-top: 20px;
     margin-bottom: 20px;
-    /* position: relative; */
-
 }
-
-/* .red::after {
-    content: "";
-    display: block;
-    width: 15%; /* Adjust the border length here 
-    height: 2px; /* Thickness of the border 
-    background-color: #dc0d0d; 
-    position: absolute;
-    bottom: 0;
-    left: 10%; 
-    bottom: 45%; } */
 
 .grid-item h2 {
     font-size: 1rem;
     color: #b2b2b2;
 }
 
+/* hover effect for red-grid */
+.red:hover {
+    background: rgb(235, 131, 113) !important;
+    cursor: pointer;
+    transition: 0.9s ease-out;
+}
+
+.red:hover h1 {
+    background-color: #fff;
+    transition: 0.9s ease-out;
+}
+
+.red:hover h2 {
+    color: #fff;
+    transition: 0.9s ease-out;
+}
+
+.red:hover h3 {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: 0.9s ease-out;
+}
 
 .green h1 {
     color: rgb(39, 167, 29);
     background: rgb(113, 235, 146);
-    /* width: 10%; */
-    /* height: 10%; */
     text-align: left;
     padding: 10px;
     width: 12%;
     height: auto;
     border-radius: 10px;
-
 }
-.blue{
-        background-color: #fff !important;
-        transition: 0.1 ease-out;
+
+/* hover effect for green-grid */
+.green:hover {
+    background: rgb(113, 235, 146) !important;
+    cursor: pointer;
+    transition: 0.9s ease-out;
+}
+
+.green:hover h1 {
+    background-color: #fff;
+    transition: 0.9s ease-out;
+}
+
+.green:hover h2 {
+    color:  #fff;
+    transition: 0.9s ease-out;
+}
+
+.green:hover h3 {
+    color:  #fff;
+    border-bottom: 2px solid #fff;
+    transition: 0.9s ease-out;
+}
+
+/* Styling the blue grid */
+.blue {
+    background-color: #fff !important;
+    transition: 0.1 ease-out;
 }
 
 .blue h1 {
     color: #fff;
     background: rgb(51, 196, 244);
-    /* width: 10%; */
-    /* height: 10%; */
     text-align: left;
     padding: 10px;
     width: 12%;
     height: auto;
     border-radius: 10px;
-
 }
 
 .blue h2 {
@@ -287,6 +262,7 @@ nav .right .join:hover {
     border-bottom: solid 2px #dc0d0d;
 }
 
+/* hover effect for blue-grid */
 .blue:hover {
     background-color:rgb(51, 196, 244) !important;
     cursor: pointer;
@@ -301,60 +277,112 @@ nav .right .join:hover {
 
 .blue:hover h2 {
     color:  #fff;
-    
     transition: 0.9s ease-out;
 }
 
 .blue:hover h3 {
     color: #fff;
     border-bottom: 2px solid #fff;
+    transition: 0.9s ease-out;
+}
+
+
+/* Responsive Styles */
+/* Large Tablets and Small Desktops (1024px and below) */
+@media (max-width: 1024px) {
+    nav {
+        padding-inline-start: 50px;
+        padding-inline-end: 20px;
+    }
+
+    nav .left h1 {
+        font-size: 1.8rem; /* Reduce brand name size */
+        margin-right: 50px;
+    }
+
+    nav .right {
+        margin-right: 50px; /* Adjust spacing for buttons */
+    }
+
+    .header {
+        margin: 50px; /* Reduce margins */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* Two columns for medium screens */
+        margin: 20px;
+    }
+
+    .grid-item h1 {
+        font-size: 1.05rem;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /*Stack navigation items */
+        align-items: center;
+        padding-inline-start: 80px;
+        padding-inline-end: 20px;
+    }
     
-    transition: 0.9s ease-out;
+    nav .left ul {
+        flex-direction: column; /* Stack menu items */
+        gap: 10px;
+    }
+    nav .right button {
+        font-size: 0.7rem; /* Reduce button text size */
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        margin: 20px;
+    }
 }
 
-.green:hover {
-    background: rgb(113, 235, 146) !important;
-    cursor: pointer;
-    transition: 0.9s ease-out;
-}
-
-.green:hover h1 {
-    /* color: #fff; */
-    background-color: #fff;
-    transition: 0.9s ease-out;
-}
-
-.green:hover h2 {
-    color:  #fff;
-    transition: 0.9s ease-out;
-}
-
-.green:hover h3 {
-    color:  #fff;
-    border-bottom: 2px solid #fff;
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /*Stack navigation items */
+        align-items: center;
+        padding-inline-start: 80px;
+        padding-inline-end: 20px;
+    }
     
-    transition: 0.9s ease-out;
-}
+    nav .left ul {
+        flex-direction: column; /* Stack menu items */
+        gap: 10px;
+    }
 
-.red:hover {
-    background: rgb(235, 131, 113) !important;
-    cursor: pointer;
-    transition: 0.9s ease-out;
-}
+    nav .left h1 {
+        font-size: 1.5rem; /* Further reduce brand name size */
+    }
 
-.red:hover h1 {
-    /* color: #fff; */
-    background-color: #fff;
-    transition: 0.9s ease-out;
-}
+    .header h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
 
-.red:hover h2 {
-    color: #fff;
-    transition: 0.9s ease-out;
-}
+    .header h3 {
+        font-size: 0.8rem; /* Adjust subheading size */
+    }
 
-.red:hover h3 {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    transition: 0.9s ease-out;
+    .buttons button {
+        width: 30%; /* Buttons take full width */
+        font-size: 0.7rem; /* Adjust font size */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        margin: 15px;
+    }
+
+    .grid-item h1 {
+        font-size: 1rem;
+    }
 }
