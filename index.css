@@ -69,7 +69,6 @@ nav .right .login {
     border: none;
 }
 
-
 nav .right .join {
     background-color: rgb(51, 196, 244);
     color: #fff;
@@ -151,7 +150,7 @@ nav .right .join:hover {
   .grid-item {
     background-color: #fff;
     padding: 35px;
-    transition: box-shadow 0.5s ease-in-out;
+    /* transition: box-shadow 0.5s ease-in-out; */
     transition: 0.9s ease-in-out;
     border-radius: 10px; 
 }
@@ -175,6 +174,7 @@ nav .right .join:hover {
     font-weight: bold;
     padding-top: 20px;
     margin-bottom: 20px;
+    transition: 1s ease-out;
 }
 
 .grid-item h2 {
@@ -213,6 +213,7 @@ nav .right .join:hover {
     width: 12%;
     height: auto;
     border-radius: 10px;
+    transition: 1s ease-out;
 }
 
 /* hover effect for green-grid */
@@ -241,7 +242,7 @@ nav .right .join:hover {
 /* Styling the blue grid */
 .blue {
     background-color: #fff !important;
-    transition: 0.1 ease-out;
+    transition: 1s ease-out;
 }
 
 .blue h1 {
@@ -252,14 +253,17 @@ nav .right .join:hover {
     width: 12%;
     height: auto;
     border-radius: 10px;
+    transition: 1s ease-out;
 }
 
 .blue h2 {
     color: #b2b2b2;
+    transition: 1s ease-out;
 }
 
 .blue h3 {
     border-bottom: solid 2px #dc0d0d;
+    transition: 1s ease-out;
 }
 
 /* hover effect for blue-grid */
