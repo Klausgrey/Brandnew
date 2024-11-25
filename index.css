@@ -137,6 +137,10 @@ nav .right .join:hover {
     margin-left: 10px;
 }
 
+.bx-fast-forward {
+    font-size: 0.7rem;
+}
+
 /* Grid Section */
 .grid-container{
     display: grid;
